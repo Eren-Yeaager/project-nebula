@@ -49,11 +49,16 @@ export function Card1() {
                 </SelectContent>
               </Select>
             </div>
+            <div className="flex flex-col space-y-1.5 ">
+              <Label htmlFor="picture">Picture</Label>
+              <Input className="cursor-pointer" id="picture" type="file" />
+            </div>
           </div>
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
+        <Button>Upload</Button>
+        <Button variant="destructive">Cancel</Button>
         <Button>Submit</Button>
       </CardFooter>
     </Card>
